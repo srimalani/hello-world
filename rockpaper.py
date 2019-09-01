@@ -14,6 +14,17 @@ p2_wins = 0
 p1name = ""
 p2name = ""
 
+# def check():
+# 	if(p1=="rock" and p2=="scissors") or (p1=="paper" and p2=="rock") or (p1=="scissors" and p2=="paper"):
+# 		print(f"{p1name} wins")
+# 		p1_wins += 1
+# 	elif(p2=="rock" and p1=="scissors") or (p2=="paper" and p1=="rock") or (p2=="scissors" and p1=="paper"):
+# 		print(f"{p2name} wins")
+# 		p2_wins += 1
+# 	else:
+# 		print("Its a tie. Lets play again")	
+# 	print(f" *** SCORE ***\n {p1name} {p2name} \n     {p1_wins}        {p2_wins} \n ****************")
+
 while p1_wins < num_games//2+1 and p2_wins < num_games//2+1:
 	
 	if num_players == 1:
@@ -32,7 +43,8 @@ while p1_wins < num_games//2+1 and p2_wins < num_games//2+1:
 		elif p2==2:
 			p2="scissors"
 		print(f"Computer chooses {p2}")
-		
+
+
 		if(p1=="rock" and p2=="scissors") or (p1=="paper" and p2=="rock") or (p1=="scissors" and p2=="paper"):
 			print(f"{p1name} wins")
 			p1_wins += 1
@@ -65,8 +77,10 @@ while p1_wins < num_games//2+1 and p2_wins < num_games//2+1:
 		else:
 			print("Its a tie. Lets play again")
 		print(f" *** SCORE ***\n {p1name} {p2name} \n     {p1_wins}        {p2_wins} \n ****************")
-print("***********Final Score*************")
+
+print("*************")
 if p1_wins > p2_wins:
-	print(f"{p1name} WINS")
+	print((f"{p1name} WINS").upper())
 else:
-	print(f"{p2name} WINS")
+	print((f"{p2name} WINS").upper())
+print("*************")
